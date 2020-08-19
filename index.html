@@ -63,7 +63,9 @@
                 WebViewJavascriptBridge.callHandler('goback');
             }
             
-            
+            function jumpToSDY() {
+    window.webkit.messageHandlers.jumpToSDY.postMessage() 
+            }            
             
             function asyncAlert(content) {
                 setTimeout(function(){
